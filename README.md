@@ -103,6 +103,75 @@ The project discusses:
 
 ---
 
+### ❤️ Project 3: Heart Attack Risk Prediction
+
+**Type:** Classification Project  
+**Objective:**  
+Build a classification model to predict the risk of heart attack in individuals based on their medical attributes and vitals.
+
+#### 🔍 Problem Statement
+Cardiovascular diseases are a leading cause of mortality worldwide. Early identification of individuals at risk of heart attacks can save lives and reduce the burden on healthcare systems. This project focuses on creating a machine learning model that analyzes patient data to predict whether a person is likely to suffer from a heart attack.
+
+#### 🎯 Goal
+Predict the probability of a heart attack occurrence using clinical and personal health data of patients.
+
+#### 📊 Dataset Information
+The dataset contains anonymized medical records for individuals, with both categorical and continuous features.
+
+- **Target Variable:** `output` (1 = likely heart attack, 0 = unlikely)
+- **Sample Size:** ~300 rows (standard UCI-style dataset)
+- **Format:** `.csv`
+
+#### 🧬 Features Used
+Common features typically include:
+- `age`: Age of the person
+- `sex`: Gender (1 = male, 0 = female)
+- `cp`: Chest pain type (0–3)
+- `trestbps`: Resting blood pressure
+- `chol`: Serum cholesterol level
+- `fbs`: Fasting blood sugar > 120 mg/dl (1 = true; 0 = false)
+- `restecg`: Resting electrocardiographic results (0–2)
+- `thalach`: Maximum heart rate achieved
+- `exang`: Exercise-induced angina (1 = yes; 0 = no)
+- `oldpeak`: ST depression induced by exercise
+- `slope`: Slope of the peak exercise ST segment
+- `ca`: Number of major vessels (0–3) colored by fluoroscopy
+- `thal`: Type of defect (3 = normal, 6 = fixed defect, 7 = reversible defect)
+
+> *Note: Feature names may vary depending on the dataset version used. Proper EDA was performed to clean and validate data types and distributions.*
+
+#### 📈 Model Comparison Report
+The following models were trained and evaluated:
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest
+- K-Nearest Neighbors
+- Support Vector Machine
+
+Evaluation metrics:
+- Accuracy
+- Precision, Recall, F1 Score
+- ROC-AUC
+- Confusion Matrix
+
+#### ⚠️ Challenges Faced
+- Class imbalance handling
+- Feature scaling (especially for distance-based models like KNN)
+- Interpretation of ST segment-related features
+- Optimizing model thresholds to balance sensitivity and specificity
+
+---
+
+## 🔬 Outcome
+The final selected model achieved high accuracy and robustness across multiple metrics, and a feature importance analysis revealed which vitals and symptoms were most indicative of risk.
+
+---
+
+📌 *This project is especially useful for demonstrating practical classification workflows and handling of biomedical datasets.*
+
+---
+
+
 ## 🚀 How to Run the Projects
 1. Clone this repository.
 2. Navigate to the project folder.
